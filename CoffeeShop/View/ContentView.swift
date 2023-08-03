@@ -32,8 +32,9 @@ struct ContentView: View {
                         .frame(width: 80.0, height: 80)
                         .clipShape(Circle())
                     
-                    Text("\(result.name)" )
-                        .font(.title2)
+                    Text("\(result.name) \n\n\(result.location)"  )
+                        .font(.custom(result.name, size: 18))
+                        .fontDesign(.rounded)
                         .padding(6)
                     
                 
